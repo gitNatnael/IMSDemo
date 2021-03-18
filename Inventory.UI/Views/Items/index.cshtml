@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Data.Model.Item>
+
+@{
+    ViewData["Title"] = "index";
+}
+
+
+    <h4>There is: @ViewBag.TotalItem items in the warehouse. Total it worth: @ViewBag.totalPrice.</h4>
+<p>
+    <a asp-action="Create">Add Item</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Item Name:
+            </th>
+            <th>
+               Price:
+            </th>
+            <th>
+               Quantity:
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ItemName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ItemId}) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.ItemId })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
