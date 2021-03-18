@@ -11,7 +11,6 @@ namespace Inventory.UI.Controllers
     public class ItemsController : Controller
     {
 
-        // InventoryHelper _inventoryHelper = new InventoryHelper();
         private readonly IItemRepository _itemRepository;
         List<Item> items;
         public ItemsController(IItemRepository itemRepository)
@@ -53,7 +52,7 @@ namespace Inventory.UI.Controllers
         {
             var item = _itemRepository.GetItem(id);
             if (item == null) return NotFound("Item Not found");
-            return View(item);
+            return View("Details",item);
 
         }
 
