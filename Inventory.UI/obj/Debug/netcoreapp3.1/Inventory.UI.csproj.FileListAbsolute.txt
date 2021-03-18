@@ -139,9 +139,7 @@ C:\Learning\InventoryDemo\Inventory.UI\bin\Debug\netcoreapp3.1\runtimes\unix\lib
 C:\Learning\InventoryDemo\Inventory.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Learning\InventoryDemo\Inventory.UI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Learning\InventoryDemo\Inventory.UI\bin\Debug\netcoreapp3.1\Data.dll
-C:\Learning\InventoryDemo\Inventory.UI\bin\Debug\netcoreapp3.1\Services.dll
 C:\Learning\InventoryDemo\Inventory.UI\bin\Debug\netcoreapp3.1\Data.pdb
-C:\Learning\InventoryDemo\Inventory.UI\bin\Debug\netcoreapp3.1\Services.pdb
 C:\Learning\InventoryDemo\Inventory.UI\obj\Debug\netcoreapp3.1\Inventory.UI.csprojAssemblyReference.cache
 C:\Learning\InventoryDemo\Inventory.UI\obj\Debug\netcoreapp3.1\staticwebassets\Inventory.UI.StaticWebAssets.Manifest.cache
 C:\Learning\InventoryDemo\Inventory.UI\obj\Debug\netcoreapp3.1\staticwebassets\Inventory.UI.StaticWebAssets.xml

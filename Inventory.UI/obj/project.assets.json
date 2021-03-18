@@ -2635,19 +2635,6 @@
         "runtime": {
           "bin/placeholder/Data.dll": {}
         }
-      },
-      "Services/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Data": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Services.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Services.dll": {}
-        }
       }
     }
   },
@@ -8655,11 +8642,6 @@
       "type": "project",
       "path": "../Inventory/Data/Data.csproj",
       "msbuildProject": "../Inventory/Data/Data.csproj"
-    },
-    "Services/1.0.0": {
-      "type": "project",
-      "path": "../Inventory/Services/Services.csproj",
-      "msbuildProject": "../Inventory/Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8669,7 +8651,6 @@
       "Microsoft.EntityFrameworkCore >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5",
-      "Services >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 5.0.0"
     ]
   },
@@ -8701,9 +8682,6 @@
           "projectReferences": {
             "C:\\Learning\\InventoryDemo\\Inventory\\Data\\Data.csproj": {
               "projectPath": "C:\\Learning\\InventoryDemo\\Inventory\\Data\\Data.csproj"
-            },
-            "C:\\Learning\\InventoryDemo\\Inventory\\Services\\Services.csproj": {
-              "projectPath": "C:\\Learning\\InventoryDemo\\Inventory\\Services\\Services.csproj"
             }
           }
         }

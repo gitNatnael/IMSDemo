@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Data.Model;
-using Services.ItemService;
 using Inventory.Data;
 
 namespace Inventory.UI.Controllers
@@ -63,5 +62,6 @@ namespace Inventory.UI.Controllers
             if (id != null) _itemRepository.DeleteItem(id);
             return RedirectToAction("index");
         }
+      
     }
 }
