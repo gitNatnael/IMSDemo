@@ -4,11 +4,11 @@ using System.Collections.Generic;
 
 namespace Inventory.Data
 {
-    public interface IItemRepository
+    public interface IItemRepository<TEntity> :IDisposable where TEntity : class
     {
-        List<Item> GetItems();
-        Item GetItem(Guid id);
-        void AddItem(Item item);
+        List<TEntity> GetItems();
+        TEntity GetItem(Guid id);
+        void AddItem(TEntity item);
         void DeleteItem(Guid id);
     }
 }

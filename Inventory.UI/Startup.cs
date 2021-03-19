@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Data.Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +27,7 @@ namespace Inventory.UI
         {
             services.AddControllersWithViews();
             services.AddDbContextPool<Inventory.Context.InventoryDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("InventoryConnectionString")));
-            services.AddScoped<Inventory.Data.IItemRepository, Inventory.Data.ItemRepository>();
+            services.AddScoped<Inventory.Data.IItemRepository<Item>, Inventory.Data.ItemRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

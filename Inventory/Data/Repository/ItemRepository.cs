@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Inventory.Data
 {
-    public class ItemRepository : IItemRepository
+    public class ItemRepository : IItemRepository<Item>
     {
         private readonly InventoryDbContext _itemContext;
         public ItemRepository(InventoryDbContext itemContext)
@@ -33,6 +33,11 @@ namespace Inventory.Data
                 _itemContext.Items.Remove(item);
                 _itemContext.SaveChanges();
             }
+        }
+
+        public void Dispose()
+        {
+            _itemContext.Dispose();
         }
 
         public Item GetItem(Guid id)

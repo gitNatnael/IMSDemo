@@ -11,11 +11,13 @@ namespace Inventory.UI.Controllers
     public class ItemsController : Controller
     {
 
-        private readonly IItemRepository _itemRepository;
+        private readonly IItemRepository<Item> _itemRepository;
+       
         List<Item> items;
-        public ItemsController(IItemRepository itemRepository)
+        public ItemsController(IItemRepository<Item> itemRepository)
         {
             _itemRepository = itemRepository;
+          
         }
 
         public ActionResult create()
